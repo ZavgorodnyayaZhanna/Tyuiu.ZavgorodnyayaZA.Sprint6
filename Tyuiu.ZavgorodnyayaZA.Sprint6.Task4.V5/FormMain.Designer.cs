@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.groupBoxResult_ZZA = new System.Windows.Forms.GroupBox();
             this.textBoxResult_ZZA = new System.Windows.Forms.TextBox();
             this.groupBoxTask_ZZA = new System.Windows.Forms.GroupBox();
@@ -100,8 +100,8 @@
             this.textBoxTask_ZZA.Size = new System.Drawing.Size(430, 43);
             this.textBoxTask_ZZA.TabIndex = 0;
             this.textBoxTask_ZZA.Text = "Протабулировать функцию f(x) а заданном диапозоне от -5 до 5.\r\nРезультат вывести " +
-    "в textBox. Построить график функции и сохранить в файл\r\nOutPutTask4V20.txt по на" +
-    "жатию кнопки.\r\n\r\n";
+    "в textBox. Построить график функции и сохранить в файл\r\nOutPutTask4V5.txt по наж" +
+    "атию кнопки.\r\n\r\n";
             // 
             // groupBoxInput_ZZA
             // 
@@ -189,25 +189,25 @@
             // 
             // chartFunction_ZZA
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartFunction_ZZA.ChartAreas.Add(chartArea2);
+            chartArea3.Name = "ChartArea1";
+            this.chartFunction_ZZA.ChartAreas.Add(chartArea3);
             this.chartFunction_ZZA.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend2.Name = "Legend1";
-            this.chartFunction_ZZA.Legends.Add(legend2);
+            legend3.Name = "Legend1";
+            this.chartFunction_ZZA.Legends.Add(legend3);
             this.chartFunction_ZZA.Location = new System.Drawing.Point(0, 0);
             this.chartFunction_ZZA.Name = "chartFunction_ZZA";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.IsVisibleInLegend = false;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chartFunction_ZZA.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.IsVisibleInLegend = false;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartFunction_ZZA.Series.Add(series3);
             this.chartFunction_ZZA.Size = new System.Drawing.Size(669, 467);
             this.chartFunction_ZZA.TabIndex = 5;
             this.chartFunction_ZZA.Text = "chartFunction_SSV";
-            title2.Name = "Title1";
-            title2.Text = "График функции f(x)";
-            this.chartFunction_ZZA.Titles.Add(title2);
+            title3.Name = "Title1";
+            title3.Text = "График функции f(x)";
+            this.chartFunction_ZZA.Titles.Add(title3);
             // 
             // panelLeft_ZZA
             // 

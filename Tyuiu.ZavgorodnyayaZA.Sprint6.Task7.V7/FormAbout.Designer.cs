@@ -1,4 +1,4 @@
-﻿namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task6.V14
+﻿namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
 {
     partial class FormAbout
     {
@@ -32,7 +32,7 @@
             this.labelInfo_SSV = new System.Windows.Forms.Label();
             this.buttonOK_SSV = new System.Windows.Forms.Button();
             this.pictureBoxAvatar_SSV = new System.Windows.Forms.PictureBox();
-            this.labelInfo_ZZA = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar_SSV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,21 +64,21 @@
             this.pictureBoxAvatar_SSV.TabIndex = 2;
             this.pictureBoxAvatar_SSV.TabStop = false;
             // 
-            // labelInfo_ZZA
+            // label1
             // 
-            this.labelInfo_ZZA.AutoSize = true;
-            this.labelInfo_ZZA.Location = new System.Drawing.Point(175, 39);
-            this.labelInfo_ZZA.Name = "labelInfo_ZZA";
-            this.labelInfo_ZZA.Size = new System.Drawing.Size(297, 117);
-            this.labelInfo_ZZA.TabIndex = 3;
-            this.labelInfo_ZZA.Text = resources.GetString("labelInfo_ZZA.Text");
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(175, 39);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(297, 117);
+            this.label1.TabIndex = 3;
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // FormAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 211);
-            this.Controls.Add(this.labelInfo_ZZA);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxAvatar_SSV);
             this.Controls.Add(this.buttonOK_SSV);
             this.Controls.Add(this.labelInfo_SSV);
@@ -99,6 +99,6 @@
         private System.Windows.Forms.Label labelInfo_SSV;
         private System.Windows.Forms.Button buttonOK_SSV;
         private System.Windows.Forms.PictureBox pictureBoxAvatar_SSV;
-        private System.Windows.Forms.Label labelInfo_ZZA;
+        private System.Windows.Forms.Label label1;
     }
 }

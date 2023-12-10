@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task6.V14
 {
-    public partial class FormAbout : Form
+    public partial class FormAbout_ZZA : Form
     {
-        public FormAbout()
+        public FormAbout_ZZA()
         {
             InitializeComponent();
         }

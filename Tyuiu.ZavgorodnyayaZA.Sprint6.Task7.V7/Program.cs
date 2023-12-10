@@ -16,7 +16,7 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain_SSV());
+            Application.Run(new FormMain_ZZA());
         }
     }
 }

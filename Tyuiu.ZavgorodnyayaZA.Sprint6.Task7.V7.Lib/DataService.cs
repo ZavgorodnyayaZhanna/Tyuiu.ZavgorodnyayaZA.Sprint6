@@ -32,8 +32,8 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7.Lib
             {
                 for (int j = 0; j < columns; j++)
                 {
-                    if (j != 8) { matrix[i, j] = int.Parse(strNums[i * columns + j]); }
-                    else { matrix[i, j] = 11; }
+                    if (i != 4) { matrix[i, j] = int.Parse(strNums[i * columns + j]); }
+                    else {  matrix[i, j] = 66; }
                 }
             }
 

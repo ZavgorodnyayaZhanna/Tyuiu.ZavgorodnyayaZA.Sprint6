@@ -28,7 +28,7 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task6.V14
 
         private void buttonHelp_SSV_Click(object sender, EventArgs e)
         {
-            FormAbout formAbout = new FormAbout();
+            FormAbout_ZZA formAbout = new FormAbout_ZZA();
             formAbout.ShowDialog();
         }
 

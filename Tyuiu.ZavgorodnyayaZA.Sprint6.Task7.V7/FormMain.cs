@@ -12,13 +12,12 @@ using System.IO;
 
 namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
 {
-    public partial class FormMain_SSV : Form
+    public partial class FormMain_ZZA : Form
     {
-        public FormMain_SSV()
+        public FormMain_ZZA()
         {
             InitializeComponent();
         }
-
         static string openFilePath;
         static int rows;
         static int columns;
@@ -56,56 +55,56 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
             {
                 for (int c = 0; c < columns; c++)
                 {
-                    dataGridViewOutMatrix_SSV.Rows[r].Cells[c].Value = arrayValues[r, c];
+                    dataGridViewOutMatrix_ZZA.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
 
-            buttonSave_SSV.Enabled = true;
+            buttonSave_ZZA.Enabled = true;
         }
 
         private void buttonHelp_SSV_Click(object sender, EventArgs e)
         {
-            FormAbout formAbout = new FormAbout();
+            FormAbout_ZZA formAbout = new FormAbout_ZZA();
             formAbout.ShowDialog();
         }
 
         private void buttonOpenFile_SSV_Click(object sender, EventArgs e)
         {
-            openFileDialogTask_SSV.ShowDialog();
-            openFilePath = openFileDialogTask_SSV.FileName;
+            openFileDialogTask_ZZA.ShowDialog();
+            openFilePath = openFileDialogTask_ZZA.FileName;
 
             int[,] arrayValues = LoadFromFileData(openFilePath);
 
-            dataGridViewInMatrix_SSV.ColumnCount = columns;
-            dataGridViewInMatrix_SSV.RowCount = rows;
-            dataGridViewOutMatrix_SSV.ColumnCount = columns;
-            dataGridViewOutMatrix_SSV.RowCount = rows;
+            dataGridViewInMatrix_ZZA.ColumnCount = columns;
+            dataGridViewInMatrix_ZZA.RowCount = rows;
+            dataGridViewOutMatrix_ZZA.ColumnCount = columns;
+            dataGridViewOutMatrix_ZZA.RowCount = rows;
 
             for (int i = 0; i < columns; i++)
             {
-                dataGridViewInMatrix_SSV.Columns[i].Width = 25;
-                dataGridViewOutMatrix_SSV.Columns[i].Width = 25;
+                dataGridViewInMatrix_ZZA.Columns[i].Width = 25;
+                dataGridViewOutMatrix_ZZA.Columns[i].Width = 25;
             }
 
             for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < columns; c++)
                 {
-                    dataGridViewInMatrix_SSV.Rows[r].Cells[c].Value = arrayValues[r, c];
+                    dataGridViewInMatrix_ZZA.Rows[r].Cells[c].Value = arrayValues[r, c];
                 }
             }
 
             arrayValues = dataService.GetMatrix(openFilePath);
-            buttonDone_SSV.Enabled = true;
+            buttonDone_ZZA.Enabled = true;
         }
 
         private void buttonSave_SSV_Click(object sender, EventArgs e)
         {
-            saveFileDialogMatrix.FileName = "OutPutFileTask7V18.csv";
-            saveFileDialogMatrix.InitialDirectory = Directory.GetCurrentDirectory();
-            saveFileDialogMatrix.ShowDialog();
+            saveFileDialogMatrix_ZZA.FileName = "OutPutFileTask7V18.csv";
+            saveFileDialogMatrix_ZZA.InitialDirectory = Directory.GetCurrentDirectory();
+            saveFileDialogMatrix_ZZA.ShowDialog();
 
-            string path = saveFileDialogMatrix.FileName;
+            string path = saveFileDialogMatrix_ZZA.FileName;
 
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
@@ -115,8 +114,8 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
                 File.Delete(path);
             }
 
-            int rows = dataGridViewOutMatrix_SSV.RowCount;
-            int columns = dataGridViewOutMatrix_SSV.Columns.Count;
+            int rows = dataGridViewOutMatrix_ZZA.RowCount;
+            int columns = dataGridViewOutMatrix_ZZA.Columns.Count;
 
             string str = "";
 
@@ -126,11 +125,11 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
                 {
                     if (j != columns - 1)
                     {
-                        str += dataGridViewOutMatrix_SSV.Rows[i].Cells[j].Value + " ";
+                        str += dataGridViewOutMatrix_ZZA.Rows[i].Cells[j].Value + " ";
                     }
                     else
                     {
-                        str += dataGridViewOutMatrix_SSV.Rows[i].Cells[j].Value;
+                        str += dataGridViewOutMatrix_ZZA.Rows[i].Cells[j].Value;
                     }
                 }
             }
@@ -140,22 +139,22 @@ namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
 
         private void buttonOpenFile_SSV_MouseEnter(object sender, EventArgs e)
         {
-            toolTip_SSV.ToolTipTitle = "Открыть файл";
+            toolTip_ZZA.ToolTipTitle = "Открыть файл";
         }
 
         private void buttonDone_SSV_MouseEnter(object sender, EventArgs e)
         {
-            toolTip_SSV.ToolTipTitle = "Выполнить";
+            toolTip_ZZA.ToolTipTitle = "Выполнить";
         }
 
         private void buttonSave_SSV_MouseEnter(object sender, EventArgs e)
         {
-            toolTip_SSV.ToolTipTitle = "Сохранить в файл";
+            toolTip_ZZA.ToolTipTitle = "Сохранить в файл";
         }
 
         private void buttonHelp_SSV_MouseEnter(object sender, EventArgs e)
         {
-            toolTip_SSV.ToolTipTitle = "Справка";
+            toolTip_ZZA.ToolTipTitle = "Справка";
         }
     }
 }

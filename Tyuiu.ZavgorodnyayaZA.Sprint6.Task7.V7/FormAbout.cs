@@ -10,12 +10,13 @@ using System.Windows.Forms;
 
 namespace Tyuiu.ZavgorodnyayaZA.Sprint6.Task7.V7
 {
-    public partial class FormAbout : Form
+    public partial class FormAbout_ZZA : Form
     {
-        public FormAbout()
+        public FormAbout_ZZA()
         {
             InitializeComponent();
         }
+
         private void buttonOK_SSV_Click(object sender, EventArgs e)
         {
             this.Close();
